@@ -4,7 +4,9 @@ import one.digitalinnovation.digionebank.Gerente
 import one.digitalinnovation.digionebank.Funcionario
 
 fun main(){
-    val gustavo = Gerente("gustavo", "123.123.123-11", 5000.0)
+    val gustavo = Gerente("gustavo", "123.123.123-11", 5000.0, "123")
     ImprimeRelatorioFuncionario.imprimeRelatorio(gustavo)
+
+    Autenticacao().authentication(gustavo)
 
 }
